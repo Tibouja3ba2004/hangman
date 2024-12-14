@@ -4,21 +4,22 @@ import java.util.Scanner;
 
 public class HumanPlayer implements Player {
 	private String name;
-	public static int score=0;
-
+	private static int score=0;
+	
     public HumanPlayer(String name) {
         this.name = name;
     }
 
-    
+    @Override
     public void Guess(HangmanGame game) {
         Scanner scan = new Scanner(System.in);
         System.out.print("donner un char : ");
-        char guess = scan.next().charAt(0); // Player enters a guess
+        char guess = Character.toLowerCase(scan.next().charAt(0)); 
         game.processGuess(guess);
-    }
-
+        
     
+    }
+    @Override
     public void Status() { 
     	System.out.println(name + "'s turn to play!");
     }
@@ -26,10 +27,11 @@ public class HumanPlayer implements Player {
 
 	@Override
 	public void Score() {
-		if (SinglePlayer.isWon()) {
+		
+		if (SinglePlayer.resultat==1) {
 			score=score+100;
 		}
-		if (HangmanGame.isGameOver()) {
+		if (SinglePlayer.resultat==0) {
 			score=score-50;
 		}
 			

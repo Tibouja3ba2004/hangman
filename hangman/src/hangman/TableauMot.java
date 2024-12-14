@@ -24,7 +24,6 @@ public class TableauMot {
     };
 
     protected static String[] medium = {
-        "éléphant", 
         "avion", 
         "ordinateur", 
         "étoile", 
@@ -33,11 +32,8 @@ public class TableauMot {
         "montagne", 
         "musique",
         "histoire",
-        "cinéma",
         "cuisine",
         "brouillard",
-        "château",
-        "régime",
         "cascade",
         "nuage",
         "banquise",
@@ -46,25 +42,21 @@ public class TableauMot {
     };
 
     protected static String[] hard = {
-        "développement", 
         "architecte", 
         "autobiographie", 
         "incomparable", 
         "philosophie", 
         "hydrodynamique", 
-        "stéréotype", 
-        "magnétisme",
-        "télécommunication",
         "programmation",
-        "responsabilité",
+        
         "articulation",
         "psychologie",
-        "révolutionnaire",
+        
         "transformation",
         "indestructible",
         "extraterrestre",
         "infrastructure",
-        "paramétrisation"
+        
     };
 }
 
