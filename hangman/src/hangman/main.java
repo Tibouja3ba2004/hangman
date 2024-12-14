@@ -12,8 +12,10 @@ public class main{
 		
 	while(true) {
 		Scanner clavier= new Scanner (System.in);
-		String input= clavier.next();
+		String input= clavier.next().toLowerCase();
+		boolean playAgain= true;
 		if(input.equals("one") ||input.equals("1")) {
+			while(playAgain) {
 			String wordToGuess="";
 			int maxAttempt=6;
 			gameSetup start=start(wordToGuess,maxAttempt);
@@ -35,11 +37,25 @@ public class main{
 				System.out.println("The word was :" +start.getWordToGuess());
 
 			}
-			break;
-		}		
+			player.toString();
+			System.out.println("Go Again?(yes/no)");
+			if(!(input.equals("yes"))){
+				playAgain= false;
+				System.out.println("Thanks for playing!");
+
+			}
+		}	
+		}
 		else if(input.equals("two") ||input.equals("2")) {
-			System.out.println("wait");
-			break;
+			String wordToGuess="";
+			int maxAttempt=6;
+			System.out.print("player 1 identify yourself: ");
+			HumanPlayer player1= new HumanPlayer(input);
+			System.out.print("player 2 identify yourself: ");
+			HumanPlayer player2= new HumanPlayer(input);
+
+			
+			;
 		}
 		else {
 			System.out.println("try again");

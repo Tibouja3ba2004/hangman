@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"hangman","l":"gameSetup"},{"p":"hangman","l":"HangmanGame"},{"p":"hangman","l":"HumanPlayer"},{"p":"hangman","l":"main"},{"p":"hangman","l":"Player"},{"p":"hangman","l":"SinglePlayer"},{"p":"hangman","l":"TableauMot"}];updateSearchResults();
